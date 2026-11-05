@@ -178,7 +178,7 @@ body {
 }
 .section-parallax-law {
   --overlay-rgb: 255, 255, 255;      /* overlay color as R, G, B — the published page's near-black hero #0b0b0b */
-  --overlay-opacity: 0.75;        /* overlay strength */
+  --overlay-opacity: 0.82;        /* overlay strength */
   background-image:
     linear-gradient(
       rgba(var(--overlay-rgb), var(--overlay-opacity)),
