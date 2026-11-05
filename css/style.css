@@ -134,7 +134,7 @@ body {
    and a color overlay. Adjust --overlay-opacity: 0 = no tint, 1 = solid color. */
 .section-parallax {
   --overlay-rgb: 11, 11, 11;      /* overlay color as R, G, B — the published page's near-black hero #0b0b0b */
-  --overlay-opacity: 0.75;        /* overlay strength */
+  --overlay-opacity: 0.65;        /* overlay strength */
   background-image:
     linear-gradient(
       rgba(var(--overlay-rgb), var(--overlay-opacity)),
@@ -155,14 +155,36 @@ body {
 }
 }
 .section-parallax-info1 {
-  --overlay-rgb: 11, 11, 11;      /* overlay color as R, G, B — the published page's near-black hero #0b0b0b */
+  --overlay-rgb: 0, 0, 0;      /* overlay color as R, G, B — the published page's near-black hero #0b0b0b */
   --overlay-opacity: 0.75;        /* overlay strength */
   background-image:
     linear-gradient(
       rgba(var(--overlay-rgb), var(--overlay-opacity)),
       rgba(var(--overlay-rgb), var(--overlay-opacity))
     ),
-    url("YOUR-IMAGE-URL-HERE-2");   /* placeholder — replace with the image URL to be provided */
+    url("https://majusticehelp.com/images/lung1.png");   /* placeholder — replace with the image URL to be provided */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;   /* this line is the parallax effect */
+  color: #fff;                    /* text over a dark overlay */
+
+
+/* iOS Safari ignores background-attachment: fixed — fall back to a normal scroll */
+@media (max-width: 900px) {
+  .section-parallax { background-attachment: scroll; }
+
+}
+}
+.section-parallax-law {
+  --overlay-rgb: 255, 255, 255;      /* overlay color as R, G, B — the published page's near-black hero #0b0b0b */
+  --overlay-opacity: 0.75;        /* overlay strength */
+  background-image:
+    linear-gradient(
+      rgba(var(--overlay-rgb), var(--overlay-opacity)),
+      rgba(var(--overlay-rgb), var(--overlay-opacity))
+    ),
+    url("https://majusticehelp.com/images/law1.jpg");   /* placeholder — replace with the image URL to be provided */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
