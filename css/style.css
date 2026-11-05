@@ -51,7 +51,7 @@ body {
 
 /* ---------- Top bar ---------- */
 
-.topbar { background: var(--navy); color: #d6d6d6; font-size: 13px; }
+.topbar { background: #000; color: #d6d6d6; font-size: 13px; }
 .topbar-inner { display: flex; justify-content: space-between; align-items: center; padding-top: 9px; padding-bottom: 9px; }
 .topbar .dot { margin: 0 8px; color: var(--gold); }
 .topbar-phone { color: #fff; font-weight: 700; text-decoration: none; letter-spacing: 0.02em; }
@@ -301,7 +301,7 @@ body {
 
 /* ---------- Footer ---------- */
 
-.site-footer { background: var(--navy); color: #d9d9d9; padding: 56px 0 32px; }
+.site-footer { background: #000; color: #d9d9d9; padding: 56px 0 32px; }
 .footer-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; margin-bottom: 36px; }
 .footer-heading { color: #fff; font-size: 16px; margin: 0 0 12px; }
 .footer-text { margin: 0 0 12px; font-size: 15px; }
