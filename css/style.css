@@ -1,10 +1,13 @@
 /* ============================================================
    Medical Malpractice landing page — modernized design
    ------------------------------------------------------------
-   Dark navy and charcoal, gold/bronze, firm green and rose-pink — palette matched
-   to biozorblawsuit.com (framework CSS identical to the uploaded file except
-   colors, plus the .header-phone rule restored because that site displays a
-   phone number). The hero form card OVERFLOWS the hero:
+   Dark navy and near-black with firm green — Bernheim Kelley branding matched
+   to the firm's published BioZorb page at personaljusticeclaim.com (same firm;
+   branding cross-referenced for this Massachusetts Tobacco page). Framework CSS
+   identical to the uploaded file except colors and heading font-family values,
+   plus the .header-phone and .logo-size rules restored from the firm's earlier
+   framework because this page carries a visible header with the firm logo
+   image and phone. Headlines are serif. The hero form card OVERFLOWS the hero:
    it is pulled down past the hero's bottom edge (negative
    bottom margin) so it overlaps the section beneath it, and
    the form frame itself scrolls internally (overflow: auto)
@@ -18,14 +21,14 @@
 
 :root {
   --navy: #122a48;
-  --navy-2: #1a1a1a;
-  --navy-3: #262626;
+  --navy-2: #262626;
+  --navy-3: #0b0b0b;
   --gold: #009a44;
   --gold-light: #8bc34a;
   --ink: #1a1a1a;
   --muted: #5f5f5f;
-  --bg: #f2f2f2;
-  --line: #d9d9d9;
+  --bg: #ffffff;
+  --line: #e5e5e5;
   --radius: 18px;
 }
 
@@ -38,7 +41,11 @@ body {
   color: var(--ink);
   line-height: 1.6;
 }
-
+.basic-imaga {
+  border-radius: 10px;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.5);
+  padding: 10px 10px 10px;
+}
 .container { max-width: 1140px; margin: 0 auto; padding: 0 24px; }
 .center { text-align: center; }
 
@@ -54,10 +61,11 @@ body {
 .site-header { background: linear-gradient(#888, #fff); ; }
 .header-inner { display: flex; justify-content: space-between; align-items: center; padding-top: 8px; padding-bottom: 0px; }
 .logo { text-decoration: none; color: var(--navy); }
-.logo-text { font-family: "Fraunces", Georgia, serif; font-weight: 700; font-size: 24px; letter-spacing: 0.01em; }
+.logo-text { font-family: Georgia, "Times New Roman", Times, serif; font-weight: 700; font-size: 24px; letter-spacing: 0.01em; }
 .logo-amp { color: var(--gold); }
-.header-phone {color: #54575b; font-size: 16px; font-weight: 600}
-.logo-size {width: 115px}
+.header-phone { color: #122a48; font-size: 16px; font-weight: 600; }
+.logo-size { width: 115px; }
+.hero-video { margin: 0 0 24px; }
 
 /* ---------- Buttons ---------- */
 
@@ -74,20 +82,65 @@ body {
 .btn--small { background: var(--navy); color: #fff; padding: 10px 12px; font-size: 12px; }
 .btn--small:hover { background: var(--navy-2); }
 .btn--light { background: #fff; color: var(--navy); }
-.btn--cta { background: #c2a05e; color: #ffffff; padding: 15px 34px; font-size: 16px; box-shadow: 0 8px 20px rgba(194, 160, 94, 0.35); }
-.btn--cta:hover { background: #d8bc7a; }
+.btn--cta { background: #44974e; color: #ffffff; padding: 15px 34px; font-size: 16px; box-shadow: 0 8px 20px rgba(68, 151, 78, 0.35); }
+.btn--cta:hover { background: #007b39; }
+
+/* ---------- Hero ---------- */
+
+.hero {
+  background: linear-gradient(160deg, var(--navy) 0%, var(--navy-2) 55%, var(--navy-3) 100%);
+  color: #fff;
+  padding: 8px 0 15px; /* extra bottom room for the overlapping form card */
+  position: relative;
+  overflow: visible;
+}
+
+.hero-inner {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 56px;
+  align-items: start;
+}
+
+.hero-eyebrow {
+  color: var(--gold-light);
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin: 0 0 14px;
+}
+
+.hero-title {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 52px;
+  line-height: 1.08;
+  margin: 0 0 18px;
+}
+
+.hero-sub { color: #d9d9d9; font-size: 18px; margin: 0 0 26px; max-width: 540px; }
+
+.hero-badges { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 10px; }
+.hero-badges li {
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 999px;
+  padding: 7px 14px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #f2f2f2;
+}
 
 /* Section with full-bleed background image, parallax scroll,
    and a color overlay. Adjust --overlay-opacity: 0 = no tint, 1 = solid color. */
 .section-parallax {
-  --overlay-rgb: 0, 0, 0;       /* overlay color as R, G, B — the sample's hero navy #091d44 */
-  --overlay-opacity: 0.85;        /* overlay strength */
+  --overlay-rgb: 11, 11, 11;      /* overlay color as R, G, B — the published page's near-black hero #0b0b0b */
+  --overlay-opacity: 0.65;        /* overlay strength */
   background-image:
     linear-gradient(
       rgba(var(--overlay-rgb), var(--overlay-opacity)),
       rgba(var(--overlay-rgb), var(--overlay-opacity))
     ),
-    url("https://personaljusticeclaim.com/images/halls-of-justice.jpg");   /* placeholder — replace with the image URL to be provided */
+    url("https://majusticehelp.com/images/lung1.png");   /* placeholder — replace with the image URL to be provided */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -101,63 +154,49 @@ body {
 
 }
 }
-
-/* ---------- Hero ---------- */
-.hero {
-   --overlay-rgb: 0, 0, 0;       /* overlay color as R, G, B — the sample's hero navy #091d44 */
-  --overlay-opacity: 0.70;         /* overlay strength */
+.section-parallax-info1 {
+  --overlay-rgb: 0, 0, 0;      /* overlay color as R, G, B — the published page's near-black hero #0b0b0b */
+  --overlay-opacity: 0.75;        /* overlay strength */
   background-image:
     linear-gradient(
       rgba(var(--overlay-rgb), var(--overlay-opacity)),
       rgba(var(--overlay-rgb), var(--overlay-opacity))
     ),
-    url("https://personaljusticeclaim.com/images/concerned-woman.jpg");   /* placeholder — replace with the image URL to be provided */
+    url("https://majusticehelp.com/images/worker1.png");   /* placeholder — replace with the image URL to be provided */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;   /* this line is the parallax effect */
-  overflow: visible;
-  /* iOS Safari ignores background-attachment: fixed — fall back to a normal scroll */
+  color: #fff;                    /* text over a dark overlay */
+
+
+/* iOS Safari ignores background-attachment: fixed — fall back to a normal scroll */
 @media (max-width: 900px) {
-  .hero { background-attachment: scroll; }
+  .section-parallax { background-attachment: scroll; }
 
 }
 }
+.section-parallax-law {
+  --overlay-rgb: 255, 255, 255;      /* overlay color as R, G, B — the published page's near-black hero #0b0b0b */
+  --overlay-opacity: 0.82;        /* overlay strength */
+  background-image:
+    linear-gradient(
+      rgba(var(--overlay-rgb), var(--overlay-opacity)),
+      rgba(var(--overlay-rgb), var(--overlay-opacity))
+    ),
+    url("https://majusticehelp.com/images/law1.jpg");   /* placeholder — replace with the image URL to be provided */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;   /* this line is the parallax effect */
+  color: #fff;                    /* text over a dark overlay */
 
-.hero-inner {
-  display: grid;
-  grid-template-columns: 1.05fr 0.95fr;
-  gap: 56px;
-  align-items: start;
+
+/* iOS Safari ignores background-attachment: fixed — fall back to a normal scroll */
+@media (max-width: 900px) {
+  .section-parallax { background-attachment: scroll; }
+
 }
-
-.hero-eyebrow {
-  color: #1ca732;
-  font-size: 13px;
-  font-weight: 800;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  margin: 0 0 14px;
-}
-
-.hero-title {
-  font-family: "Fraunces", Georgia, serif;
-  font-size: 52px;
-  line-height: 1.08;
-  margin: 0 0 10px;
-  color: #fff;
-}
-
-.hero-sub { color: #d9d9d9; font-size: 18px; margin: 0 0 15px; max-width: 540px; }
-
-.hero-badges { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 10px; }
-.hero-badges li {
-  border: 1px solid rgba(255, 255, 255, 0.28);
-  border-radius: 999px;
-  padding: 7px 14px;
-  font-size: 13px;
-  font-weight: 600;
-  color: #f2f2f2;
 }
 
 /* ---------- OVERFLOW FORM CARD ----------
@@ -174,13 +213,14 @@ body {
   position: relative;
   z-index: 2;
   margin-bottom: -30; /* <-- the overflow: card extends past the hero */
+ margin-top 20px;
 }
 
-.form-heading { font-family: "Fraunces", Georgia, serif; font-size: 26px; margin: 0 0 4px; color: var(--navy); }
+.form-heading { font-family: Georgia, "Times New Roman", Times, serif; font-size: 26px; margin: 0 0 4px; color: var(--navy); }
 .form-sub { color: var(--muted); margin: 0 0 18px; font-size: 15px; }
 
 .form-frame {
-  height: 810px;
+  height: 530px;
   max-height: 72vh;
   overflow: auto; /* <-- auto overflow: tall embeds scroll inside the card */
   border: 1px solid var(--line);
@@ -214,24 +254,25 @@ body {
   text-transform: uppercase;
   margin: 0 0 12px;
 }
-.section-kicker--light { color: #1ca732; }
+.section-kicker--light { color: var(--gold-light); }
 
 .section-title {
-  font-family: "Fraunces", Georgia, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 38px;
   line-height: 1.15;
   margin: 0 0 20px;
-  color: #54575b;
+  color: var(--navy);
   max-width: 820px;
 }
 .section-title--light { color: #fff; }
 .section-title .accent { color: var(--gold); }
 
 .lead { font-size: 19px; color: #333333; max-width: 820px; }
-.section--dark { background: #54575b; color: #e6e6e6; }
+
+.section--dark { background: var(--navy); color: #e6e6e6; }
 .section--dark .lead { color: #d9d9d9; }
 
-.section--gold { background: #f6c1d3; text-align: center; }
+.section--gold { background: #f2f2f2; text-align: center; }
 .section--gold .section-title, .section--gold .lead { margin-left: auto; margin-right: auto; }
 
 /* ---------- Cards ---------- */
@@ -265,12 +306,12 @@ body {
 .footer-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; margin-bottom: 36px; }
 .footer-heading { color: #fff; font-size: 16px; margin: 0 0 12px; }
 .footer-text { margin: 0 0 12px; font-size: 15px; }
-.footer-phone { color: #1ca732; font-weight: 700; text-decoration: none; }
+.footer-phone { color: var(--gold-light); font-weight: 700; text-decoration: none; }
 .footer-nav a { display: block; color: #d9d9d9; text-decoration: none; margin-bottom: 8px; font-size: 15px; }
 .footer-nav a:hover { color: #fff; }
-.disclaimer { border-top: 1px solid rgba(255, 255, 255, 0.15); padding-top: 22px; font-size: 13px; color: #9fb0c3; }
-.footer-base { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin-top: 22px; font-size: 13px; color: #9fb0c3; }
-.footer-legal a { color: #9fb0c3; text-decoration: none; }
+.disclaimer { border-top: 1px solid rgba(255, 255, 255, 0.15); padding-top: 22px; font-size: 13px; color: #a8a8a8; }
+.footer-base { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin-top: 22px; font-size: 13px; color: #a8a8a8; }
+.footer-legal a { color: #a8a8a8; text-decoration: none; }
 .footer-legal .dot { margin: 0 8px; }
 
 /* ---------- Responsive ---------- */
@@ -282,10 +323,10 @@ body {
   .hero-form { margin-bottom: 1px; }
   .section--after-hero { padding-top:5px; }
   .card-grid, .footer-grid { grid-template-columns: 1fr; }
-  .section-title { font-size: 26px; }
+  .section-title { font-size: 18px; }
   .hero-sub {display: none}
-  .logo-size {width: 80px}
 }
 
-
-
+@media (max-width: 900px){
+  .logo-size { width: 80px; }
+}
