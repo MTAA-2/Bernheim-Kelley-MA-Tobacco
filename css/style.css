@@ -323,7 +323,7 @@ body {
   .hero-form { margin-bottom: 1px; }
   .section--after-hero { padding-top:5px; }
   .card-grid, .footer-grid { grid-template-columns: 1fr; }
-  .section-title { font-size: 18px; }
+  .section-title { font-size: 30px; }
   .hero-sub {display: none}
 }
 
