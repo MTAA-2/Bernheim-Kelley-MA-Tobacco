@@ -292,13 +292,14 @@ body {
 .qualifier-list { list-style: none; padding: 0; margin: 24px 0 28px; display: grid; gap: 12px; max-width: 760px; }
 .qualifier-list li { padding-left: 34px; position: relative; font-size: 17px; }
 .qualifier-list li::before {
-  content: "✓";
+  content: "";
   position: absolute; left: 0; top: 0;
   width: 24px; height: 24px; border-radius: 50%;
   background: var(--gold); color: #ffffff;
   display: inline-flex; align-items: center; justify-content: center;
   font-size: 14px; font-weight: 800;
 }
+.prior-results { font-size: 10px; }
 
 /* ---------- Footer ---------- */
 
