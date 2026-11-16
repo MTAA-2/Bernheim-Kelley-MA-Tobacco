@@ -189,7 +189,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;   /* this line is the parallax effect */
-  color: #fff;                    /* text over a dark overlay */
+  color: #000;                    /* text over a dark overlay */
 
 
 /* iOS Safari ignores background-attachment: fixed — fall back to a normal scroll */
@@ -212,7 +212,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;   /* this line is the parallax effect */
-  color: #fff;                    /* text over a dark overlay */
+  color: #000;                    /* text over a dark overlay */
 
 
 /* iOS Safari ignores background-attachment: fixed — fall back to a normal scroll */
@@ -222,7 +222,7 @@ body {
 }
 }
 
-.section-parallax-bottom {
+.section-parallax-gavel {
   --overlay-rgb: 0, 0, 0;      /* overlay color as R, G, B — the published page's near-black hero #0b0b0b */
   --overlay-opacity: 0.82;        /* overlay strength */
   background-image:
