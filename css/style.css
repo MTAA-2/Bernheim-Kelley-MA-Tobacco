@@ -207,7 +207,7 @@ body {
       rgba(var(--overlay-rgb), var(--overlay-opacity)),
       rgba(var(--overlay-rgb), var(--overlay-opacity))
     ),
-    url("https://majusticehelp.com/images/flame.jpg");   /* placeholder — replace with the image URL to be provided */
+    url("https://majusticehelp.com/images/tobacco-flame.jpg");   /* placeholder — replace with the image URL to be provided */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
