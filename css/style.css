@@ -189,7 +189,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;   /* this line is the parallax effect */
-  color: #000;                    /* text over a dark overlay */
+  color: #fff;                    /* text over a dark overlay */
 
 
 /* iOS Safari ignores background-attachment: fixed — fall back to a normal scroll */
@@ -198,6 +198,53 @@ body {
 
 }
 }
+
+.section-parallax-flame {
+  --overlay-rgb: 255, 255, 255;      /* overlay color as R, G, B — the published page's near-black hero #0b0b0b */
+  --overlay-opacity: 0.82;        /* overlay strength */
+  background-image:
+    linear-gradient(
+      rgba(var(--overlay-rgb), var(--overlay-opacity)),
+      rgba(var(--overlay-rgb), var(--overlay-opacity))
+    ),
+    url("https://majusticehelp.com/images/flame.jpg");   /* placeholder — replace with the image URL to be provided */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;   /* this line is the parallax effect */
+  color: #fff;                    /* text over a dark overlay */
+
+
+/* iOS Safari ignores background-attachment: fixed — fall back to a normal scroll */
+@media (max-width: 900px) {
+  .section-parallax { background-attachment: scroll; }
+
+}
+}
+
+.section-parallax-bottom {
+  --overlay-rgb: 0, 0, 0;      /* overlay color as R, G, B — the published page's near-black hero #0b0b0b */
+  --overlay-opacity: 0.82;        /* overlay strength */
+  background-image:
+    linear-gradient(
+      rgba(var(--overlay-rgb), var(--overlay-opacity)),
+      rgba(var(--overlay-rgb), var(--overlay-opacity))
+    ),
+    url("https://majusticehelp.com/images/justice-gavel.png");   /* placeholder — replace with the image URL to be provided */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;   /* this line is the parallax effect */
+  color: #fff;                    /* text over a dark overlay */
+
+
+/* iOS Safari ignores background-attachment: fixed — fall back to a normal scroll */
+@media (max-width: 900px) {
+  .section-parallax { background-attachment: scroll; }
+
+}
+}
+
 
 /* ---------- OVERFLOW FORM CARD ----------
    The card hangs 110px below the hero (negative margin) so it
