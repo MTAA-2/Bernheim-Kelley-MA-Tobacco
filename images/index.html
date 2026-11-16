@@ -1,0 +1,745 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Massachusetts Tobacco Lawsuit | Bernheim Kelley</title>
+<meta name="description" content="Massachusetts smokers diagnosed with lung, throat or mouth cancer, COPD, emphysema or bladder cancer in the last 4 years may qualify for a tobacco lawsuit. Free case review.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<!-- MTAA CIPA Block — must come FIRST -->
+<script src="https://geo.mtaa.ai/block.js"></script>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', "1238664640565416");
+fbq('track', "ViewContent");
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1238664640565416&ev=ViewContent&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+</head>
+<body>
+
+<!-- ============ TOP UTILITY BAR ============ -->
+<div class="topbar">
+  <div class="container topbar-inner">
+    <span class="topbar-trust">
+      <strong>Free Case Review</strong>
+      <span class="dot" aria-hidden="true">&middot;</span>
+      100% Confidential
+    </span>
+  </div>
+</div>
+
+<!-- ============ HEADER / LOGO ============ -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="/">
+   <img class="logo-size" src="https://personaljusticeclaim.com/images/bernheim-kelley-battista-injury-lawyers-logo-home.webp" alt="Bernheim Kelley Injury Lawyers"> </a>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero section-parallax">
+  <div class="container hero-inner">
+    <div class="hero-copy">
+      <p class="hero-eyebrow">Massachusetts Tobacco Lawsuit</p>
+      <h1 class="hero-title">Did You Start Smoking as a Teen — and Get Diagnosed with Cancer or COPD?</h1>
+      <p class="hero-sub">Massachusetts smokers — and their families — can still hold the tobacco companies accountable. Bernheim Kelley offers free, confidential case reviews for smokers diagnosed in the last four years.</p>
+      <ul class="hero-badges">
+        <li>Free Case Review</li>
+        <li>100% Confidential</li>
+        <li>No Obligation</li>
+      </ul>
+    </div>
+
+    <!-- ============ FORM (IFRAME EMBED, OVERFLOW CARD) ============ -->
+    <div class="hero-form" id="form">
+      <h2 class="form-heading">Get Your Free Case Review</h2>
+      <p class="form-sub">Fill out the form to get started now. After you submit, you can pick a time to speak with our team.</p>
+      <div class="form-frame">
+        <script>
+(function () {
+  "use strict";
+  var config = {"url":"https://forms.mtaa.ai/f/nf_3270a8a1b0e4425cb70e9f97f2fa5a3c?embed=1","formId":18,"title":"Form"};
+  var script = document.currentScript;
+  if (!script || !script.parentNode) return;
+  var url = new URL(config.url);
+  var origin = url.origin;
+  url.searchParams.set("parentOrigin", window.location.origin);
+  // The form is the reason the visitor is on this page, so it is never lazy:
+  // a deferred iframe costs the whole shell round trip after layout. The
+  // preconnect gets the TLS handshake out of the way while the page paints.
+  var preconnect = document.createElement("link");
+  preconnect.rel = "preconnect";
+  preconnect.href = origin;
+  var frame = document.createElement("iframe");
+  frame.src = url.toString();
+  frame.title = config.title;
+  frame.width = "100%";
+  frame.height = "720";
+  frame.style.border = "0";
+  frame.style.display = "block";
+  frame.setAttribute("referrerpolicy", "strict-origin-when-cross-origin");
+  var session = null;
+  var submitted = false;
+  var rechecking = false;
+  function cleanUrl(value) {
+    try {
+      var parsed = new URL(value);
+      if (parsed.protocol !== "https:" && parsed.protocol !== "http:") return null;
+      var clean = parsed.origin + parsed.pathname;
+      return clean.length <= 2048 ? clean : null;
+    } catch (_) { return null; }
+  }
+  // One id for this page session, reused by the browser event and by the
+  // server's Conversions API copy of it. A UUID when the browser can make one,
+  // 32 random hex characters when it only has getRandomValues, and a
+  // Math.random string on the oldest browsers: an id that is merely unlikely to
+  // repeat still beats no event at all.
+  function eventBase() {
+    var api = window.crypto;
+    try {
+      if (api && typeof api.randomUUID === "function") {
+        var uuid = api.randomUUID();
+        if (typeof uuid === "string" && /^[A-Za-z0-9-]{8,64}$/.test(uuid)) return uuid;
+      }
+      if (api && typeof api.getRandomValues === "function" && typeof Uint8Array === "function") {
+        var bytes = api.getRandomValues(new Uint8Array(16));
+        var hex = "";
+        for (var index = 0; index < bytes.length; index += 1) hex += (bytes[index] + 256).toString(16).slice(-2);
+        if (/^[a-f0-9]{32}$/.test(hex)) return hex;
+      }
+    } catch (_) { /* fall through to the arithmetic fallback */ }
+    var random = "";
+    while (random.length < 32) random += ("0000000" + Math.floor(Math.random() * 4294967296).toString(16)).slice(-8);
+    return random.slice(0, 32);
+  }
+  function cookieValue(name) {
+    // A hardened host page can make cookie access throw outright. The lead
+    // still has to be reported, just without Meta's own cookies.
+    var jar = "";
+    try { jar = typeof document.cookie === "string" ? document.cookie : ""; } catch (_) { jar = ""; }
+    var parts = jar.split(";");
+    for (var index = 0; index < parts.length; index += 1) {
+      var separator = parts[index].indexOf("=");
+      if (separator < 1 || parts[index].slice(0, separator).trim() !== name) continue;
+      var value = parts[index].slice(separator + 1).trim();
+      return value.length > 0 && value.length <= 512 ? value : null;
+    }
+    return null;
+  }
+  function blocked() {
+    return window.__MTAA_PIXEL_BLOCKED === true;
+  }
+  // A blocked visitor is never given a cookie of ours, first-party or not, and
+  // nothing new is read from their jar either: their state stays exactly what
+  // it was before this generation existed.
+  // Only an id shaped like an id is stored. A click id is a URL parameter, and
+  // one carrying a semicolon would otherwise write the attributes after it: an
+  // exotic click still travels in the attribution, it just is not persisted.
+  function writeCookie(name, value) {
+    if (blocked() || !/^[A-Za-z0-9._-]{1,512}$/.test(value)) return;
+    try {
+      document.cookie = name + "=" + value + "; Max-Age=7776000; Path=/; SameSite=Lax"
+        + (window.location.protocol === "https:" ? "; Secure" : "");
+    } catch (_) {
+      // A hardened page simply keeps no id of its own.
+    }
+  }
+  var ownBrowserId = null;
+  var ownClickId = null;
+  // Meta's own browser id when the pixel wrote one; the id we kept from an
+  // earlier visit next; and otherwise one in Meta's own format, stored first
+  // party. The built value is remembered so a page that refuses the cookie
+  // still reports one id for the visit instead of a new one each time.
+  function browserCookie() {
+    var stored = cookieValue("_fbp");
+    if (stored) return stored;
+    if (blocked()) return null;
+    var kept = cookieValue("mtaa_fbp");
+    if (kept) return kept;
+    if (ownBrowserId) return ownBrowserId;
+    var digits = "";
+    while (digits.length < 10) digits += String(Math.floor(Math.random() * 10));
+    ownBrowserId = "fb.1." + Date.now() + "." + digits;
+    writeCookie("mtaa_fbp", ownBrowserId);
+    return ownBrowserId;
+  }
+  // Meta's own click cookie when it exists; otherwise the one the pixel would
+  // have written for this click, in the same format and timestamped now, now
+  // also kept first party so a return visit still carries the click.
+  function clickCookie(landing) {
+    var stored = cookieValue("_fbc");
+    if (stored) return stored;
+    var kept = blocked() ? null : cookieValue("mtaa_fbc");
+    if (kept) return kept;
+    if (ownClickId) return ownClickId;
+    var clickId = landing.searchParams.get("fbclid");
+    if (!clickId) return null;
+    var built = "fb.1." + Date.now() + "." + clickId;
+    if (built.length > 512) return null;
+    ownClickId = built;
+    writeCookie("mtaa_fbc", built);
+    return built;
+  }
+  var eventId = eventBase();
+  function attribution() {
+    var result = {};
+    var landing = new URL(window.location.href);
+    var clean = cleanUrl(landing.href);
+    if (clean) result.landingUrl = clean;
+    var referrer = cleanUrl(document.referrer);
+    if (referrer) result.referrer = referrer;
+    ["source", "medium", "campaign", "term", "content"].forEach(function (key) {
+      var value = landing.searchParams.get("utm_" + key);
+      if (value && value.length <= 2048) result[key] = value;
+    });
+    // The pixel carriers travel as ordinary click ids: the event id this page
+    // will report, the browser and click ids, the compliance block flag,
+    // whether the host page could fire its browser pixel, and this snippet's
+    // own generation.
+    // They go in FIRST: the iframe runtime keeps only the first twenty click
+    // ids, and these six are the ones that must never be the entries dropped.
+    var clicks = {};
+    clicks.mtaa_eid = eventId;
+    var browserId = browserCookie();
+    if (browserId) clicks.fbp = browserId;
+    var clickId = clickCookie(landing);
+    if (clickId) clicks.fbc = clickId;
+    if (blocked()) clicks.mtaa_pixel_blocked = "1";
+    // Record whether this host page could fire its own browser pixel.
+    clicks.mtaa_fbq = (!blocked() && typeof window.fbq === "function") ? "1" : "0";
+    // Which snippet this page has pasted, so a lead whose events look wrong can
+    // be traced to a landing page that needs re-copying.
+    clicks.mtaa_v = "3";
+    // The last six are Facebook's campaign, adset and ad ids in both spellings
+    // the ad templates use. An Unbounce page carries them as hidden inputs; a
+    // native form has none, so the landing URL is the only place they exist and
+    // the lead's source_campaign/adset/ad columns stay empty without them.
+    ["gclid", "fbclid", "msclkid", "cid", "campaign_id", "asid", "adset_id", "aid", "ad_id"].forEach(function (key) {
+      var value = landing.searchParams.get(key);
+      if (value && value.length <= 512) clicks[key] = value;
+    });
+    if (Object.keys(clicks).length) result.clickIds = clicks;
+    return result;
+  }
+  function trackLead(outcome) {
+    if (blocked() || typeof window.fbq !== "function") return;
+    try {
+      window.fbq("track", "Lead", {}, { eventID: eventId });
+      if (outcome === "fql") window.fbq("trackCustom", "QualifiedLead", {}, { eventID: eventId + "_q" });
+    } catch (_) {
+      // A broken host pixel must never reach the lander or the form.
+    }
+  }
+  // The events the FORM named, each on the id of its own moment, so the
+  // server's Conversions API copy pairs with it whatever name was chosen.
+  function trackEvents(events, value, currency) {
+    if (blocked() || typeof window.fbq !== "function") return;
+    try {
+      for (var index = 0; index < events.length; index += 1) {
+        var entry = events[index];
+        var data = entry.name === "Purchase" ? { value: value, currency: currency } : {};
+        window.fbq(entry.standard ? "track" : "trackCustom", entry.name, data, { eventID: eventId + entry.suffix });
+      }
+    } catch (_) {
+      // A broken host pixel must never reach the lander or the form.
+    }
+  }
+  // Only the moments the runtime can post, and only with the names that moment
+  // may carry: a page may not be talked into firing an arbitrary event, nor the
+  // same moment twice, by anything that gets a message past the origin and
+  // session checks. "" is the submitted moment and "_q" the qualified one.
+  var MOMENT_NAMES = { "": ["Lead"], _q: ["QualifiedLead", "SubmitApplication", "Purchase"] };
+  function plannedEvents(data) {
+    var events = data.events;
+    if (!Array.isArray(events) || events.length < 1 || events.length > 2) return null;
+    var purchase = false;
+    var moments = [];
+    for (var index = 0; index < events.length; index += 1) {
+      var entry = events[index];
+      if (!entry || typeof entry !== "object" || Array.isArray(entry) || Object.keys(entry).length !== 3
+        || (entry.suffix !== "" && entry.suffix !== "_q")
+        || moments.indexOf(entry.suffix) >= 0
+        || MOMENT_NAMES[entry.suffix].indexOf(entry.name) < 0
+        || typeof entry.standard !== "boolean"
+        // QualifiedLead is the one custom event; every other name is standard.
+        || entry.standard === (entry.name === "QualifiedLead")) return null;
+      moments.push(entry.suffix);
+      if (entry.name === "Purchase") purchase = true;
+    }
+    var keys = Object.keys(data).length;
+    if (!purchase) return keys === 4 ? events : null;
+    if (keys !== 6 || typeof data.value !== "number" || !Number.isFinite(data.value) || data.value < 0
+      || data.currency !== "USD") return null;
+    return events;
+  }
+  var reported = null;
+  function postAttribution() {
+    // A re-check can fire after the page has taken the form off the DOM, where
+    // the frame no longer has a window to talk to. Nothing this script does may
+    // throw on a client's landing page.
+    if (!frame || !frame.contentWindow) return;
+    var next = attribution();
+    try {
+      frame.contentWindow.postMessage({ type: "mtaa-form:attribution", sessionId: session, attribution: next }, origin);
+      reported = next;
+    } catch (_) {
+      // Nothing was delivered, so the next re-check tries again.
+    }
+  }
+  // A lander's own pixel often initialises after this form has loaded, and the
+  // lead would otherwise be reported without the cookies it then wrote. Only
+  // Meta's own two can change under us; ours are written once and kept.
+  function recheck() {
+    if (submitted || !session) return;
+    var before = (reported && reported.clickIds) || {};
+    var after = attribution().clickIds || {};
+    if (before.fbp === after.fbp && before.fbc === after.fbc) return;
+    postAttribution();
+  }
+  /* mtaa-host:start */
+  var hostOn = true;
+  var hostStarted = false;
+  var hostViewTimer = null;
+  var hostViewObserver = null;
+  var hostViewSeen = false;
+  var hostScrollListener = null;
+  var hostScrollFrame = false;
+  var hostDepth = 0;
+  function hostRun(task) {
+    if (!hostOn) return;
+    try { task(); } catch (_) { hostOn = false; }
+  }
+  function hostPost(message) {
+    if (frame && frame.contentWindow) frame.contentWindow.postMessage(message, origin);
+  }
+  function hostReady() {
+    hostRun(function () {
+      if (hostStarted) return;
+      hostStarted = true;
+      if (window.performance && typeof window.performance.now === "function") {
+        var top = frame.getBoundingClientRect().top + (window.scrollY || 0);
+        hostPost({ type: "mtaa-form:host", e: "host_context", age: Math.round(window.performance.now()), fold: top >= 0 && top <= window.innerHeight });
+      }
+      if (typeof window.IntersectionObserver === "function" && typeof setTimeout === "function" && typeof clearTimeout === "function") {
+        hostViewObserver = new window.IntersectionObserver(function (entries) {
+          hostRun(function () {
+            if (hostViewSeen) return;
+            var visible = entries[0] && entries[0].target === frame && entries[0].intersectionRatio >= 0.5;
+            if (visible && hostViewTimer === null) {
+              hostViewTimer = setTimeout(function () {
+                hostRun(function () {
+                  hostViewTimer = null;
+                  hostViewSeen = true;
+                  if (hostViewObserver) hostViewObserver.disconnect();
+                  hostViewObserver = null;
+                  hostPost({ type: "mtaa-form:host", e: "form_in_view" });
+                });
+              }, 1000);
+            } else if (!visible && hostViewTimer !== null) {
+              clearTimeout(hostViewTimer);
+              hostViewTimer = null;
+            }
+          });
+        }, { threshold: 0.5 });
+        hostViewObserver.observe(frame);
+      }
+      if (typeof window.requestAnimationFrame === "function") {
+        hostScrollListener = function () {
+          hostRun(function () {
+            if (hostScrollFrame) return;
+            hostScrollFrame = true;
+            window.requestAnimationFrame(function () {
+              hostRun(function () {
+                hostScrollFrame = false;
+                var height = document.documentElement.scrollHeight;
+                if (!height) return;
+                var before = hostDepth;
+                hostDepth = Math.max(hostDepth, 100 * ((window.scrollY || 0) + window.innerHeight) / height);
+                [25, 50, 75, 100].forEach(function (depth) {
+                  if (before < depth && hostDepth >= depth) hostPost({ type: "mtaa-form:host", e: "host_scroll", d: depth });
+                });
+                if (hostDepth >= 100) window.removeEventListener("scroll", hostScrollListener);
+              });
+            });
+          });
+        };
+        window.addEventListener("scroll", hostScrollListener, { passive: true });
+        hostScrollListener();
+      }
+    });
+  }
+  /* mtaa-host:end */
+  window.addEventListener("message", function (event) {
+    if (event.origin !== origin || event.source !== frame.contentWindow) return;
+    var data = event.data;
+    if (!data || typeof data !== "object" || Array.isArray(data) || data.formId !== config.formId) return;
+    if (data.type === "mtaa-form:ready") {
+      if (Object.keys(data).length !== 3 || typeof data.sessionId !== "string"
+        || !/^[A-Za-z0-9_-]{8,128}$/.test(data.sessionId)) return;
+      session = data.sessionId;
+      postAttribution();
+      hostReady();
+      // One set of re-checks per page, however many times the form announces
+      // itself: a remounted iframe must not multiply the timers.
+      if (!rechecking && typeof setTimeout === "function") {
+        rechecking = true;
+        setTimeout(recheck, 2000);
+        setTimeout(recheck, 5000);
+        setTimeout(recheck, 15000);
+      }
+    } else if (data.type === "mtaa-form:resize") {
+      if (Object.keys(data).length !== 4 || !session || data.sessionId !== session
+        || typeof data.height !== "number" || !Number.isFinite(data.height) || data.height <= 0) return;
+      frame.height = String(Math.min(10000, Math.max(320, Math.ceil(data.height))));
+      recheck();
+    } else if (data.type === "mtaa-form:meta-events") {
+      if (!session || data.sessionId !== session || submitted) return;
+      var planned = plannedEvents(data);
+      if (!planned) return;
+      submitted = true;
+      trackEvents(planned, data.value, data.currency);
+    } else if (data.type === "mtaa-form:submitted") {
+      // Older published forms post only this message, and a current one posts
+      // it after the plan above. One flag covers both, so a lead is counted
+      // once whichever of them this page understands.
+      if (Object.keys(data).length !== 4 || !session || data.sessionId !== session || submitted
+        || (data.outcome !== "fql" && data.outcome !== "valid_non_fql")) return;
+      submitted = true;
+      trackLead(data.outcome);
+    }
+  });
+  script.parentNode.insertBefore(preconnect, script);
+  script.parentNode.insertBefore(frame, script);
+})();
+</script>
+      </div>
+      <p class="form-privacy">
+        The information you submit will be used solely to evaluate your potential
+        legal claim and to communicate with you about it.
+      </p>
+    </div>
+  </div>
+</section>
+
+<main class="content">
+<!-- THE LAWSUIT) -->
+<section class="section" id="conditions">
+    <div class="container hero-inner">
+      <div>
+         <h2 class="section-title">The <span class="accent">Massachusetts Tobacco</span> Lawsuit</h2>
+         <p class="section-kicker">MASSACHUSETTS TOBACCO VERDICT</p>
+        <h2 class="section-title"><span class="accent">$</span>200,000,000</h2>
+            <p>
+       Recent verdict obtained by Bernheim Kelley attorney Walter Kelley. 
+          <span class="prior-results"><br>Prior results do not guarantee a similar outcome.</span></p>
+  
+     </div>
+      <div>
+      <p class="hero-eyebrow">
+        <img class="basic-imaga" src="images/Walter-Kelley-Esq.png" alt="Massachusetts tobacco lawsuit lawyer" width="300px"> </p>
+       <p><strong>Massachusetts Trial Attorney - Walter Kelley, Esq.</strong></p>
+ 
+    </div>
+    </div>
+      <div class="container">
+    <br> 
+<p>
+<strong>Did You Start Smoking as a Teenager and Later Develop Lung Cancer or COPD?</strong>
+For decades, tobacco companies targeted children, concealed the dangers of smoking, and misled the public about nicotine addiction. 
+If you or a loved one developed lung cancer, COPD, or another serious smoking-related illness, you may have a winning case.
+</p>
+<p>Bernheim Kelley has been leading the fight against cigarette manufacturers in Massachusetts since 2016, securing substantial verdicts and settlements for smokers and their families.</p>
+<p><stong>Find out if you qualify.</stong></p>
+</div>
+    <div class="container">
+      <ul class="qualifier-list">
+        <li><strong> Free Case Review</strong></li>
+ <li><strong>100% Confidential</strong></li>
+ <li><strong> No Fee Unless We Win</strong></li>
+      </ul></div>
+  </section>
+ <!-- ABOUT THE LAWSUIT (two-column, with image) =================== -->
+  <section class="section" id="conditions">
+    <div class="container hero-inner">
+      <div>
+     
+       <h2 class="section-title">Why Clients Choose <span class="accent">Bernheim Kelley</span></h2>
+       <p class="section-kicker">Leading Massachusetts Tobacco Litigation Since 2016</p>
+      <p class="lead">
+        We have filed more cigarette lawsuits in Massachusetts than any other law firm. For nearly a decade, we have been at the forefront of the fight to hold Big Tobacco accountable for the devastating consequences of its misconduct.
+      </p>
+     
+ <p class="section-kicker">
+        A Proven Record of Exceptional Results</p>
+        <p>
+Our trial verdicts and settlements rank among the best achieved by any law firm litigating cigarette cases nationwide. We have the experience, resources, and proven trial record to take on the world's largest tobacco companies.
+
+      </p>
+      <p class="section-kicker">
+      Boston Trial Lawyers Who Know How to Win
+      </p>
+      <p>
+        When you take on Big Tobacco, who represents you matters. We know their defenses, we know their tactics, and we know how to take these cases to trial.  You will not find a more experienced, committed, or capable trial lawyer to handle your case. <strong>Period.</strong>
+      </p>
+      </div>
+      <div> 
+      <p class="hero-eyebrow">
+         <img class="basic-imaga" src="images/bad-news-man-hospital-wife.jpg" alt="award" width="375px">
+         <br>
+        <img class="basic-imaga" src="images/best-law-firm.png" alt="award" width="160px">
+  </p>
+    </div>
+      </div>
+  </section>
+<section class="section section-parallax-law">
+    <div class="container">
+      <div>
+         <h2 class="section-title">About The <span class="accent">Massachusetts Tobacco<span> Lawsuit</h2>
+         <p class="section-kicker">Big Tobacco Knew the Truth - and Hid It.</p>
+<p>For decades, cigarette manufacturers knew smoking caused deadly diseases and that nicotine was addictive. Rather than warn the public, they worked together to conceal the dangers, dispute the science, and keep Americans smoking.</p>
+<br>
+ <p class="section-kicker">They Targeted Children and Misled Smokers.</P>
+  <p>Tobacco companies distributed free cigarette samples to children and teenagers, deliberately recruited young smokers, and marketed “light” and “ultralight” cigarettes as safer alternatives—even though they were not. Millions became addicted before they understood the risks, and many later developed lung cancer, COPD, and other devastating diseases.</p>
+<p class="section-kicker">You Still Have the Right to Sue.</p>
+<p>Massachusetts law allows eligible smokers and families of deceased smokers to pursue individual lawsuits against cigarette manufacturers. The Master Settlement Agreement did not take away those rights. Even if you started smoking decades ago, knew smoking was dangerous, or quit years before your diagnosis, <strong>you may still have a case.</strong>
+</p>     
+</div>
+</div>
+</section>
+
+  <!-- DO YOU QUALIFY (parallax) ==================================== -->
+  <section class="section section-parallax-info1" id="causes">
+    <div class="container">
+      <p class="section-kicker section-kicker--light">Do You Qualify?</p>
+      <h2 class="section-title section-title--light">You May Qualify <span class="">If…</span></h2>
+      <p class="">
+        You may qualify for a Massachusetts tobacco lawsuit if the following apply:
+      </p>
+
+      <div class="card-grid">
+        <div class="card">
+          <h3 class="card-title">You Live in Massachusetts</h3>
+          <p>You currently reside in Massachusetts.</p>
+        </div>
+        <div class="card">
+          <h3 class="card-title">You Started Smoking in 1957 or Later</h3>
+          <p>YYou began smoking in 1957 or later, particularly if you started as a child or teenager before turning 16.</p>
+        </div>
+        <div class="card">
+          <h3 class="card-title">You Were Diagnosed Within the Last 4 Years</h3>
+          <p>You were diagnosed with lung cancer, COPD, or emphysema within the past four years.</p>
+        </div>
+        <div class="card">
+          <h3 class="card-title">Or You Lost a Loved One</h3>
+          <p>A family member passed away from one of these smoking-related diseases within the past four years.
+</p>
+        </div>
+        <div class="card">
+          <h3 class="card-title">You Were Targeted or Misled by Tobacco Companies</h3>
+          <p>You received free cigarette samples as a minor, or smoked “light” or “ultralight” cigarettes believing they were safer. These facts may strengthen your case but are not required to request a review.</p>
+        </div>
+      </div>
+
+      <p class="center">
+      <strong>  Not Sure If You Qualify?</strong>
+      <br>
+          Every case is different. Even if you don't meet every criterion above, you may still have a claim.</p>
+          <p class="center">
+        <a class="btn btn--cta" href="#form">CHECK YOUR ELIGIBILITY - FREE CASE REVIEW</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- DON'T WAIT / STATUTE OF LIMITATIONS ========================== -->
+  <section class="section section-parallax-flame" id="results">
+    <div class="container">
+      <p class="section-kicker">Don't Wait to Protect Your Rights</p>
+      <h2 class="section-title">Time Limits <span class="accent">Apply to Tobacco Lawsuits</span></h2>
+      <p class="lead">
+       Massachusetts law imposes strict deadlines for filing personal injury and wrongful death lawsuits. In many cases, the applicable limitations period is three years, although when that period begins and whether any exceptions apply depend on the circumstances.
+</p>
+       <p>If you or a loved one has been diagnosed with a smoking-related disease, don't assume it is too late—or that you have more time.</p>
+       <p>
+Our legal team will review your circumstances, evaluate potential claims, and help determine the deadlines that may apply.</p>
+     <p class="center">
+        <a class="btn btn--cta" href="#form">SPEAK WITH OUR TOBACCO LITIGATION TEAM</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- FAQ =========================================================== -->
+  <section class="section" id="coverage">
+    <div class="container">
+      <h2 class="section-title">Frequently <span class="accent">Asked Questions</span></h2>
+
+      <h3>Can I Still Sue a Cigarette Company in Massachusetts?</h3>
+      <p>
+        Yes. Massachusetts smokers who develop lung cancer, COPD, or other serious smoking-related illnesses may have the right to bring individual lawsuits against cigarette manufacturers. Families of smokers who have died may also have claims.
+      </p>
+
+      <h3>Didn't the Tobacco Companies Already Settle These Cases?</h3>
+      <p>
+       No. The 1998 Master Settlement Agreement resolved claims brought by state governments. It did not eliminate the rights of individual smokers and their families to pursue their own lawsuits.
+      </p>
+
+      <h3>What If I Knew Smoking Was Dangerous?</h3>
+      <p>
+       You may still have a case. Knowing that smoking posed health risks does not automatically prevent someone from bringing a lawsuit against a cigarette manufacturer. Every case is different, and your legal rights depend on the particular facts and circumstances.
+      </p>
+
+      <h3>What If I Started Smoking as a Child or Teenager??</h3>
+      <p>
+        Starting as a minor can be an important part of your case. For decades, tobacco companies marketed cigarettes to young people, distributed free samples, and worked to create generations of nicotine-dependent customers. Many smokers became addicted before they fully understood the consequences.
+      </p>
+
+      <h3>What do I have to prove to win?</h3>
+      <p>
+        Two things: (1) <strong>actual harm</strong> — a serious health
+        condition like cancer or COPD caused by smoking; and
+        (2) <strong>breach</strong> — that the tobacco company breached
+        its duty to consumers, whether through a defective product,
+        negligence, or intentional wrongdoing.
+      </p>
+
+      <h3>What If I Smoked “Light” or “Ultralight” Cigarettes?</h3>
+      <p>
+        You may have a claim. Tobacco companies marketed these cigarettes in ways that led consumers to believe they were safer than regular cigarettes. Evidence that you relied on those representations may be important to your case.
+      </p>
+
+      <h3>What If I Quit Smoking Years Ago?</h3>
+      <p>
+        You may still qualify. Many smoking-related diseases develop years or decades after a person stops smoking. Quitting does not automatically prevent you from pursuing a claim against the cigarette manufacturers.
+
+      </p>
+
+       <h3>What If My Husband, Wife, or Parent Died from Smoking?</h3>
+      <p>
+       Eligible family members or representatives of a deceased smoker's estate may be able to bring a wrongful death or other legal claim. The circumstances of the death, the smoking history, and the applicable filing deadlines will determine whether a claim can proceed.
+      </p>
+
+        <h3>How Much Does It Cost to Hire Bernheim Kelley?</h3>
+      <p>
+      There is no charge for your initial case review. We handle qualifying tobacco cases on a contingency fee basis, meaning <strong>you pay no attorney's fee unless we recover compensation for you.</strong>
+      </p>
+
+       <h3>How Do I Get Started??</h3>
+      <p>
+      Contact Bernheim Kelley for a free, confidential case review. Our team will ask about your smoking history, medical diagnosis, and other relevant circumstances to determine whether you may have a claim.</strong>
+      </p>
+      <p class="center">
+        <a class="btn btn--cta" href="#form">GET YOUR FREE CASE REVIEW</a>
+      </p>
+    </div>
+  </section>
+
+
+
+<!-- DON'T WAIT / STATUTE OF LIMITATIONS ========================== -->
+  <section class="section section section-parallax-gavel" id="results">
+    <div class="container">WE ARE HERE TO HELP</p>
+      <h2 class="section-title"><span class="accent-white">Take the First Step Toward Justice
+ </span><br>
+
+ <span class="accent">Big Tobacco Had Its Chance to Tell the Truth. Now It's Your Turn to Be Heard.</span></h2>
+      <p class="lead-white">
+      For nearly a decade, Bernheim Kelley has been fighting for Massachusetts smokers and their families. We have the experience, resources, and courtroom results to take on the cigarette manufacturers.
+</p>
+       <p>If you or someone you love has suffered from a smoking-related disease, contact us today.<br>
+        <ul>
+<li>Free, Confidential Consultation</li>
+ <li>Experienced Massachusetts Tobacco Trial Lawyers</li>
+<li>No Attorney's Fee Unless We Recover Compensation</li>
+</ul>
+</p>
+       <p>
+Our legal team will review your circumstances, evaluate potential claims, and help determine the deadlines that may apply.</p>
+<br>
+     <p class="center">
+        <a class="btn btn--cta" href="#form">SPEAK WITH OUR TOBACCO LITIGATION TEAM</a>
+      </p>
+    </div>
+  </section>
+
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container">
+
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h3 class="footer-heading">Contact</h3>
+         <img width="150px" src="images/bernheim-kelley-battista-injury-lawyers-logo-home.webp" alt="Bernheim Kelley Injury Lawyers">
+        <p class="footer-text">
+          Bernheim Kelley Injury Lawyers<br>
+          26 Howland St. Plymouth, MA 02360
+        </p>
+        <p class="footer-text">
+        </p>
+      </div>
+      <div class="footer-col">
+        <h3 class="footer-heading">Quick Links</h3>
+        <nav class="footer-nav" aria-label="Footer">
+          <a href="#form">Check Your Eligibility</a>
+          <a href="#why-counsel">Why Clients Choose Us</a>
+          <a href="#conditions">About the Lawsuit</a>
+          <a href="#coverage">Questions Answered</a>
+        </nav>
+      </div>
+      <div class="footer-col">
+        <h3 class="footer-heading">Free Case Review</h3>
+        <p class="footer-text">
+          No fee is charged unless your case is successful.
+          No obligation, 100% confidential.
+        </p>
+        <a class="btn btn--small btn--light" href="#form">Get a Free Case Review</a>
+      </div>
+    </div>
+
+    <div class="disclaimer">
+      <p>
+        THIS IS ATTORNEY ADVERTISING sponsored by Bernheim Kelley
+        Injury Lawyers. This website is an attorney advertisement. Prior
+        results do not guarantee a similar outcome. No representation is
+        made that the quality of legal services to be performed is greater
+        than the quality of legal services performed by other lawyers.
+      </p>
+      <p>
+        By filling out the form above, I agree to receive telephone calls and
+        text messages at the telephone number provided above/below (including
+        any mobile number provided) to our law firm. I understand that consent
+        to receiving phone calls and/or text is not a condition to the
+        formation of an attorney-client relationship. I also have read and
+        agree to your Privacy Policy and Disclaimer.
+      </p>
+    </div>
+
+    <div class="footer-base">
+      <p>&copy; 2026 Bernheim Kelley Injury Lawyers. All rights reserved.</p>
+      <nav class="footer-legal" aria-label="Legal">
+        <a target="blank" href="privacy-policy.html">Privacy Policy</a>
+        <span class="dot" aria-hidden="true">&middot;</span>
+        <a target="blank" href="disclaimer.html">Disclaimer</a>
+      </nav>
+    </div>
+
+  </div>
+</footer>
+
+</body>
+</html>
