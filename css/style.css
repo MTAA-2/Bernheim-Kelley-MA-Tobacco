@@ -189,7 +189,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;   /* this line is the parallax effect */
-  color: #fff;                    /* text over a dark overlay */
+  color: #000;                    /* text over a dark overlay */
 
 
 /* iOS Safari ignores background-attachment: fixed — fall back to a normal scroll */
