@@ -313,6 +313,7 @@ body {
 }
 .section-title--light { color: #fff; }
 .section-title .accent { color: var(--gold); }
+.section-title .accent-white { color: #fff; }
 
 .lead { font-size: 19px; color: #333333; max-width: 820px; }
 .lead-white { font-size: 19px; color: #fff; max-width: 820px; }
