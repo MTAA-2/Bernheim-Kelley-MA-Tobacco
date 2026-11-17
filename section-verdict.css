@@ -50,7 +50,7 @@
   position: absolute;
   top: -14px;
   right: -14px;
-  width: 100%;
+  width: 350px;
   height: 100%;
   border: 2px solid var(--gold-light);
   border-radius: 12px;
@@ -58,8 +58,8 @@
 .verdict-photo {
   position: relative;
   z-index: 1;
-  width: 350px;
   height: auto;
+  width: 350px;
   display: block;
 }
 .verdict-caption {
