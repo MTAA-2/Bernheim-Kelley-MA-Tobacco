@@ -43,8 +43,8 @@ body {
 }
 .basic-imaga {
   border-radius: 10px;
-  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.5);
-  padding: 10px 10px 10px;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
+  padding: 5px 5px 5px;
 }
 .container { max-width: 1140px; margin: 0 auto; padding: 0 24px; }
 .center { text-align: center; }
@@ -379,4 +379,97 @@ body {
 
 @media (max-width: 900px){
   .logo-size { width: 80px; }
+}
+/* ============================================================
+   "Why Clients Choose Bernheim Kelley" — redesigned section
+   Append to style.css. Uses the page's existing variables
+   (--navy #122a48, --gold #009a44, --gold-light #8bc34a) and
+   classes (.section, .container, .section-kicker, .section-title,
+   .lead, .basic-imaga). All new rules are scoped to .why-*.
+   ============================================================ */
+
+/* Header: full-width intro above the two columns */
+.why-head { max-width: 820px; }
+
+/* Two-column body: text left, media right */
+.why-grid {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 56px;
+  align-items: start;
+  margin-top: 40px;
+}
+
+/* Each point: green left rule + real subheading, so the two
+   ideas read as separate blocks instead of one wall of text */
+.why-point {
+  border-left: 3px solid var(--gold);
+  padding-left: 22px;
+  margin-bottom: 32px;
+}
+.why-point:last-child { margin-bottom: 0; }
+.why-point h3 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 22px;
+  line-height: 1.25;
+  color: var(--navy);
+  margin: 0 0 8px;
+}
+.why-point p { margin: 0; color: #444444; }
+
+/* Media: framed photo with a light-green offset outline behind it,
+   and the award badge overlapping the bottom-left corner */
+.why-media {
+  position: relative;
+  margin: 6px 0 28px;
+}
+.why-media::before {
+  content: "";
+  position: absolute;
+  top: -14px;
+  right: -14px;
+  width: 100%;
+  height: 100%;
+  border: 2px solid var(--gold-light);
+  border-radius: 12px;
+}
+.why-photo {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.why-badge {
+  position: absolute;
+  z-index: 2;
+  left: -18px;
+  bottom: -26px;
+  width: 170px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.25);
+  padding: 12px 14px;
+}
+.why-badge img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Mobile: stack the columns, keep the badge overlapping the photo */
+@media (max-width: 900px) {
+  .why-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+    margin-top: 32px;
+  }
+  .why-media { margin-bottom: 36px; }
+  .why-media::before { top: -10px; right: -10px; }
+  .why-badge {
+    left: 12px;
+    bottom: -22px;
+    width: 140px;
+    padding: 10px 12px;
+  }
 }
